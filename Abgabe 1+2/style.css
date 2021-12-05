@@ -1,0 +1,151 @@
+body{
+     background-color: papayawhip; 
+     font: New York;
+     font-family:'Mochiy Pop One', sans-serif;
+     font-size: 96%;}
+
+ [href]{
+     background: papayawhip;
+     color: black;}
+
+ #zumAnfang {
+     color: rgba(19,177,233,1.00);
+     position: relative;
+     display: right;} 
+
+ div{
+     position: static;
+     border: 3px solid rgba(19,177,233,1.00);
+     padding-left: 10px;
+     padding-right: 10px;
+     background-image: radial-gradient(
+        circle closest-side at center,
+        tan,
+        papayawhip,
+        rgba (419,177,233,1.00));} 
+
+ li:first-child{
+     color: black;}
+
+ li:last-child{
+     color: black;}
+
+ li:nth-child(3){
+     color: black;}
+
+ li:nth-of-type(1n){
+     background: papayawhip;
+     padding: 2px;}
+ 
+ nav li:hover{
+     color: black;
+     font-size: 1.2em;
+     padding: 10px;
+     transition: background-color 1s, padding 1s ease;}
+ 
+ li::marker{
+     content: "°";}
+
+ div li::first-letter {
+     color: white;
+     background-color: pink;
+     border-radius: 2px;
+     box-shadow: 3px 3px 0 black;
+     font-size: 100%;
+     padding: 3px 1px;
+     margin-right: 6px;
+     float: left;}
+
+ @keyframes pulse {
+     20% {
+         padding: 30px;
+         background-color: pink;}
+ }
+img{
+     float: inline;
+     border: 1px solid black;
+     width: fit-content;
+     background-color: lightpink;
+     padding: 20px;
+     animation: pulse 4s;
+     animation-iteration-count: unset;}
+
+ iframe{
+     float: inline;
+     border: 1px solid black;
+     width: fit-content;
+     background-color: lightpink;
+     padding: 20px;
+     width: 560px;}
+
+ p {
+     border: 1px solid lightpink;
+     width: 1500px;
+     background-color: black;
+     padding: 1px;}
+
+ a{
+     font: 14px New Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+     text-decoration: black;
+     color: rgb black;
+     padding: 0px 5 px 0 px 5px;
+     border-right: 2px solid black;}
+
+ @media screen and (max-width: 30em) {
+     body{ font-size: 50%;}
+ }
+
+ @media screen and (max-width: 30em) {
+     body{ font-size: 50%;}
+ }
+
+ @media screen and (max-width: 30em) {
+     body{ font-size: 50%;}
+ }
+
+ .Startseite{
+     height: 30 px;
+     background: papayawhip;
+     padding-top: 7px solid;
+     padding-left: 5px;
+     margin-top: 20px;
+     box-shadow: 4px 6px pink;
+     overflow: hidden;}
+
+ .Eventseite{
+     height: 30 px;
+     background: papayawhip;
+     padding-top: 7px solid;
+     padding-left: 5px;
+     margin-top: 20px;
+     box-shadow: 4px 6px papayawhip;
+     overflow: hidden;}
+
+ h1{
+     position: relative;
+     left: 2%;
+     right: 2%;
+     top: 1vh;
+     height: 50px;
+     background: rgb papayawhip;
+     color: palevioletred;
+     padding: 50px;
+     width: 400px;}
+
+ h2{
+     margin-bottom: 25px;
+     background: #E19596;
+     padding: 20px;}
+
+ h4{
+     color: pink;
+     border: 2px;
+     padding-left: 0px;
+     margin: 10px;}
+
+ table{ 
+     border: solid black;
+     background: rgba papayawhip;
+     box-shadow: 4px 6px black;}
+
+
