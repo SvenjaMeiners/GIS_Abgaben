@@ -7,10 +7,21 @@ var MyClient;
     //const myForm: HTMLFormElement = <HTMLFormElement>document.getElementById("myForm");
     const dateInput = document.getElementById("date");
     const sendButton = document.getElementById("send-button");
+    const addElement = document.getElementById("add");
+    const serverButton = document.getElementById("server-button");
     sendButton.addEventListener("click", function (evt) {
         evt.preventDefault();
         request();
     });
+    serverButton.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        requestServer();
+    });
+    async function requestServer() {
+        let response = await fetch(url);
+        let responseText = await response.text();
+        addElement.innerText = responseText;
+    }
     async function request() {
         /*
         let formData: FormData= new FormData;
@@ -23,6 +34,7 @@ var MyClient;
         let response = await fetch(urlWithQuery);
         let responseText = await response.text();
         console.log(responseText);
+        addElement.innerText = responseText;
     }
 })(MyClient || (MyClient = {}));
 /*

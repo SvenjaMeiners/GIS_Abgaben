@@ -18,6 +18,8 @@ namespace MyServer {
                 response.write("Server erreichbar");
             }
             else if(request.method === "GET"){
+                console.log(JSON.parse(url.searchParams.get("b")));
+                
             let date: Date = new Date(JSON.parse(url.searchParams.get("b")))
             response.write("Day: " + date.getDay() + "," + "Month:" + date.getMonth() + "," + "Year:" +  date.getFullYear());
             }else{
